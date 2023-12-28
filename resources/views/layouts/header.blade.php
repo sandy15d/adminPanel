@@ -1,6 +1,6 @@
 <head>
     <meta charset="utf-8"/>
-    <title>Dashboard | Velzon - Admin & Dashboard Template</title>
+    @stack('title')
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Laravel Admin Panel" name="description"/>
 
@@ -21,6 +21,21 @@
     <link href="{{URL::to('/')}}/assets/css/icons.min.css" rel="stylesheet" type="text/css"/>
     <!-- App Css-->
     <link href="{{URL::to('/')}}/assets/css/app.min.css" rel="stylesheet" type="text/css"/>
+
+    <!--datatable css-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css"/>
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.2/css/buttons.dataTables.min.css">
+
     <!-- custom Css-->
     <link href="{{URL::to('/')}}/assets/css/custom.min.css" rel="stylesheet" type="text/css"/>
+    <style>
+        div.dt-buttons {
+            padding: 0.5rem !important;
+        }
+        table.dataTable {
+            padding: 0.5rem !important;
+        }
+
+    </style>
 </head>

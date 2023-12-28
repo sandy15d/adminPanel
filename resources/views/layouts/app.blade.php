@@ -80,6 +80,8 @@
 
 @include('layouts.theme_customizer')
 @include('layouts.script')
+{{--@livewire('livewire-ui-spotlight')
+@livewireScripts--}}
 </body>
 
 </html>
