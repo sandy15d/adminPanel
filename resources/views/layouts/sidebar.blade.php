@@ -1,10 +1,10 @@
 <!-- ========== App Menu ========== -->
 @php
-    $isMasterActive = request()->is('role') || request()->is('permission') || request()->is('user');
-    $isRolesPermissionActive = request()->is('role') || request()->is('permission');
-    $roleActive = request()->is('role') ? 'active' : '';
-    $permissionActive = request()->is('permission') ? 'active' : '';
-    $userActive = request()->is('user') ? 'active' : '';
+    $isMasterActive = request()->is('role*') || request()->is('permission*') || request()->is('user*');
+    $isRolesPermissionActive = request()->is('role*') || request()->is('permission*');
+    $roleActive = request()->is('role*') ? 'active' : '';
+    $permissionActive = request()->is('permission*') ? 'active' : '';
+    $userActive = request()->is('user*') ? 'active' : '';
 @endphp
 <div class="app-menu navbar-menu">
     <!-- LOGO -->

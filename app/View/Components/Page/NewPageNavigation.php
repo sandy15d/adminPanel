@@ -1,27 +1,22 @@
 <?php
 
-namespace App\View\Components\Modal;
+namespace App\View\Components\Page;
 
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class Modal extends Component
+class NewPageNavigation extends Component
 {
-    public $id;
     public $title;
-    public $body;
-    public $footer;
+    public $route;
     /**
      * Create a new component instance.
      */
-    public function __construct( $id, $title,$body = null, $footer = null)
+    public function __construct($title, $route)
     {
-        $this->id = $id;
         $this->title = $title;
-
-        $this->body = $body;
-        $this->footer = $footer;
+        $this->route = $route;
     }
 
     /**
@@ -29,6 +24,6 @@ class Modal extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.modal.modal');
+        return view('components.page.new-page-navigation');
     }
 }

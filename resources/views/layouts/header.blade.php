@@ -7,11 +7,8 @@
     <!-- App favicon -->
     <link rel="shortcut icon" href="{{URL::to('/')}}/assets/images/favicon.ico">
 
-    <!-- jsvectormap css -->
-    <link href="{{URL::to('/')}}/assets/libs/jsvectormap/css/jsvectormap.min.css" rel="stylesheet" type="text/css"/>
 
-    <!--Swiper slider css-->
-    <link href="{{URL::to('/')}}/assets/libs/swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" type="text/css" />
 
     <!-- Layout config Js -->
     <script src="{{URL::to('/')}}/assets/js/layout.js"></script>
@@ -36,6 +33,5 @@
         table.dataTable {
             padding: 0.5rem !important;
         }
-
     </style>
 </head>
